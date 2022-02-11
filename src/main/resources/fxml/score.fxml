@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ScoreController">
+    <children>
+        <ImageView fitHeight="400.0" fitWidth="600.0">
+            <image>
+                <Image url="@../images/background.png" />
+            </image>
+        </ImageView>
+        <TableView fx:id="lastgame" editable="true" layoutX="25.0" layoutY="74.0" prefHeight="250.0" prefWidth="270.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="90.0" text="User ID" />
+                <TableColumn fx:id="username" prefWidth="90.0" text="Name" />
+                <TableColumn fx:id="score" prefWidth="90.0" text="Score" />
+                <TableColumn fx:id="gamemode" prefWidth="90.0" text="Score" />
+            </columns>
+        </TableView>
+        <TableView fx:id="topgame" editable="true" layoutX="316.0" layoutY="74.0" prefHeight="250.0" prefWidth="270.0">
+            <columns>
+                <TableColumn fx:id="topid" prefWidth="90.0" text="User ID" />
+                <TableColumn fx:id="topusername" prefWidth="90.0" text="Name" />
+                <TableColumn fx:id="topscore" prefWidth="90.0" text="Score" />
+                <TableColumn fx:id="topgamemode" prefWidth="90.0" text="Score" />
+            </columns>
+        </TableView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="212.0" prefHeight="61.0" prefWidth="187.0" text="Eredmények" textFill="#1f1f25">
+         <font>
+            <Font name="Dyuthi" size="36.0" />
+         </font>
+      </Label>
+        <Button fx:id="quitButton" layoutX="190.0" layoutY="335.0" mnemonicParsing="false" onAction="#quitGame" prefHeight="51.0" prefWidth="105.0" text="Kilépés" textFill="#1f1f25">
+            <font>
+                <Font name="Dyuthi" size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="restartButton" layoutX="316.0" layoutY="335.0" mnemonicParsing="false" onAction="#restartAction" prefHeight="51.0" prefWidth="105.0" text="Újra" textFill="#1f1f25">
+            <font>
+                <Font name="Dyuthi" size="18.0" />
+            </font>
+        </Button>
+
+    </children>
+</Pane>
