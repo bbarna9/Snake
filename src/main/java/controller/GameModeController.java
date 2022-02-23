@@ -88,7 +88,6 @@ public class GameModeController {
         Button transButton = (Button)actionEvent.getSource();
         System.out.print(transButton);
         OperandSymbols transOperandSymbol =switchOperation(transButton);
-        System.out.print("ITT MŰKÖDIK---------------");
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/snake.fxml"));
         Parent root = fxmlLoader.load();
         fxmlLoader.<SnakeController>getController().initData(userName, transOperandSymbol);
